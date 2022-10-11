@@ -76,12 +76,12 @@ function isTwo(random) {
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-function calculateTip(billAmount, billPercent) {
-  let billAmount = bill;
-  let tipPercent = tip;
-    return(parseFloat(billAmount) + parseFloat(tipPercent));
 
-}
+// function calculateTip(billAmount, billPercent) {
+//   let billAmount = bill;
+//   let tipPercent = tip;
+//     return(parseFloat(billAmount) + parseFloat(tipPercent));
+// }
 
 
 
