@@ -53,8 +53,8 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-function isTwo(random) {
-    if (random === 3) {
+function isTwo(num) {
+    if (num === 2) {
         return true
 
     } else {
@@ -77,11 +77,14 @@ function isTwo(random) {
  */
 
 
-// function calculateTip(billAmount, billPercent) {
-//   let billAmount = bill;
-//   let tipPercent = tip;
-//     return(parseFloat(billAmount) + parseFloat(tipPercent));
-// }
+function calculateTip(tipPercent, total) {
+    let tipAmount = total * tipPercent;
+    return tipAmount;
+}
+
+console.log(calculateTip(.2, 20));
+console.log(calculateTip(0.25, 25.50));
+console.log(calculateTip(0.15, 33.42));
 
 
 
@@ -92,8 +95,10 @@ function isTwo(random) {
  * then display the dollar amount they should tip
  */
 
-prompt("what tip percentage would you like to contribute?");
+let userTotal = parseFloat(prompt("Total today?"));
+let userTip = parseFloat(prompt("What percentage would you like to tip?"))/100;
 
+alert("You'll add $" + calculateTip(userTip, userTotal).toFixed(2) + " to your bill today.");
 
 /**
  * TODO:
@@ -109,9 +114,8 @@ prompt("what tip percentage would you like to contribute?");
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount() {
- console.log(totalBill * tipPercent);
- prompt("Your'e total price is $" + calculateTip);
-
+function applyDiscount(regPrice, disPerc) {
+ return regPrice - (regPrice * disPerc);
 }
-
+console.log(applyDiscount(100, .2));
+console.log(applyDiscount(45.99, 0.12));

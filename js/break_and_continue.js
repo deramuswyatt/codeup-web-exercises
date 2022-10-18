@@ -52,3 +52,30 @@ let number = 0;
      }
      console.log("here is an odd number: " + i);
 }
+
+ // do {
+ //
+ //     let userInput = prompt("please enter number 1- 50. ");
+ //
+ //     if(userInput & 2 === 0){
+ //         alert('Your input is even');
+ //     }else if (userInput < 1){
+ //         alert('your input is less than 1');
+ //     }else if(userInput > 50){
+ //         alert('your input is greater than 50');
+ //     }else{
+ //         alert('valid input');
+ //         break;
+ //     }
+ //
+ // } while(true)
+
+let userInput = prompt("please enter number 1- 50. ");
+console.log("Number to skip is " + userInput);
+for (let i = 1; i < 50; i += 2){
+    if (userInput == i){
+        console.log("yikes! Skipping number " + userInput);
+        continue;
+    }
+    console.log('Here is an odd number:' + i);
+}
