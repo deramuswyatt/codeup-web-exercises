@@ -27,14 +27,7 @@
      * string, and <li> tags around each planet.
      */
 
-//      planetsString.split = planetsString.split(''<br>'')
-// console.log(planetsArray)
-//     var listPlanets = planetsString.split("|");
-//     var brlistPlanets = "<ul>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ul>";
-//     console.log(listPlanets);
-//     console.log(brlistPlanets);
-    //
-    // let brtags = ("Mercury, "'<br>'"Venus, "<br>"Earth "<br>"Mars "<br>"jupiter "<br>"Saturn "<br>"Uranus "<br>"Neptune " );
-    // // console.log(brtags)
-    // let break = <br>
+
+    let brTags =planetsArray.join("<br>")
+    console.log(brTags);
 })();
