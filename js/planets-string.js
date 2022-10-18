@@ -13,7 +13,7 @@
     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
     var planetsArray = planetsString.split("|");
 
-    // console.log(planetsArray);
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -27,13 +27,14 @@
      * string, and <li> tags around each planet.
      */
 
-//     let planetsString.split = planetsString.split(''<br>'')
+//      planetsString.split = planetsString.split(''<br>'')
 // console.log(planetsArray)
-    var listPlanets = planetsString.split("|");
-    var brlistPlanets = "<ul>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ul>";
-    console.log(listPlanets);
-    console.log(brlistPlanets);
+//     var listPlanets = planetsString.split("|");
+//     var brlistPlanets = "<ul>" + "<li>" + listPlanets.join("</li><li>") + "</li>" + "</ul>";
+//     console.log(listPlanets);
+//     console.log(brlistPlanets);
     //
-    // let brtags = ("Mercury, "<br>"Venus, "<br>"Earth "<br>"Mars "<br>"jupiter "<br>"Saturn "<br>"Uranus "<br>"Neptune " );
-    // console.log(brtags)
+    // let brtags = ("Mercury, "'<br>'"Venus, "<br>"Earth "<br>"Mars "<br>"jupiter "<br>"Saturn "<br>"Uranus "<br>"Neptune " );
+    // // console.log(brtags)
+    // let break = <br>
 })();
