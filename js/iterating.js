@@ -73,15 +73,12 @@ function first (arr) {
 
     }
     function last(arr) {
-    return arr[length - 1]
+    return arr[arr.length - 1]
     }
 
-// function second() {
-// return arr;
-// }
-// function last() {
-// return arr;
-// }
+    console.log(first(names));
+    console.log(second(names));
+    console.log(last(names));
 
 
 })();
