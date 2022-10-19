@@ -1,3 +1,5 @@
+(function (){
+
 /**
  * TODO:
  * Create an object with firstName and lastName properties that are strings
@@ -41,23 +43,14 @@
  * represents one shopper. Use a foreach loop to iterate through the array,
  * and console.log the relevant messages for each person
  */
-// function cal() {
-//     // let offerAmount = 0.12;
-//     let productAmount = prompt("");
-//     // let applyOffer = parseFloat(productAmount > 200)
-//     let discount = 0.12;
-//     let total = productAmount - (productAmount * discount);
-//     if (productAmount > parseFloat(200)) {
-//         return total;
-//     } else {
-//         return productAmount;
-//     }
-// }
-let total = amount - (amount * 0.12);
+
+
+
 let shoppers = [
     {
         name: 'Cameron',
         amount: 180},
+
 
     {
         name: 'Ryan',
@@ -67,12 +60,23 @@ let shoppers = [
         name: 'George',
         amount: 320
     },
-if (name = amount){
-    return total;
-    }
+    ]
 
-];
-console.log(total)
+    shoppers.forEach(function(shopper) {
+        if(shopper.amount > 200)
+        {
+            return("Your new total is " + (shopper.amount * 0.88));
+        }else
+        {
+            return("Your total is $" + shopper.amount + "You do not get a discount");
+        }
+
+    });
+console.log (shoppers[1].amount);
+
+
+
+
 
 /** TODO:
  * Create an array of objects that represent books and store it in a
@@ -91,28 +95,28 @@ let books = [
             title: "The Salmon of Doubt",
             author: {
                 firstName: "Douglas",
-                lastName: "Adams"
+                lastName: "Adams",
             }
     },
     {
         title: "The Bernstein Bears",
         author: {
             firstName: "Robert",
-            lastName: "Allen"
+            lastName: "Allen",
         }
     },
     {
         title: "Over the River",
         author: {
             firstName: "Delta",
-            lastName: "AirBorne"
+            lastName: "AirBorne",
         }
     },
     {
         title: "Black Eagle Up",
         author: {
             firstName: "Big Fella",
-            lastName: "Fella Big"
+            lastName: "Fella Big",
         }
     },
     {
@@ -122,6 +126,7 @@ let books = [
             lastName: "Perry"
         }
     }
+
 ]
 console.log(books[0].title);
 console.log(books[3].author.firstName);
@@ -153,8 +158,15 @@ console.log(books[4].author.lastName);
  *      ---
  *      ...
  */
-array.forEach(books => console.log(books));
 
+books.forEach(function(book) {
+
+})
+console.log("Book # 1 " + books[0]);
+console.log(books[1]);
+console.log(books[2]);
+console.log(books[3]);
+console.log(books[4]);
 /**
  * Bonus:
  * - Create a function named `createBook` that accepts a title and author
@@ -165,3 +177,31 @@ array.forEach(books => console.log(books));
  *   outputs the information described above. Refactor your loop to use your
  *   `showBookInfo` function.
  */
+// function createBook(){
+    let books1 = [
+        {
+            title: "The Codeup Crew",
+            author: {
+                firstName: "wyatt",
+                lastName: "DeRamus"
+            }
+        },
+    {
+            title: "Forever and a Day",
+            author:{
+            firstName: "DeRamus",
+            lastName: "Wyatt"
+    }
+        },
+]
+
+// }
+books1.forEach(function(book) {
+
+})
+
+console.log(books1[0]);
+// function showBookInfo(){
+//
+// }
+})();
