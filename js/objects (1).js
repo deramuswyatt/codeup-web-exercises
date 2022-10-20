@@ -10,12 +10,12 @@
 
 function isANumber(input) {
     return typeof input === "number"
-    // if (typeof num === "number")  {
-    //     return true;
-    // }else (typeof(parseFloat(isNaN == num)))
-    // {
-    //     return false;
-    // }
+    if (typeof num === "number")  {
+        return true;
+    }else (typeof(parseFloat(isNaN == num)))
+    {
+        return false;
+    }
 }
 
 function increment (num) {
