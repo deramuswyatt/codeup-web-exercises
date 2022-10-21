@@ -2,24 +2,8 @@
 //     Ex. let obj = {name: “Potatoes”, quantity: 2, price: “$7.89"};
 // getPrice(obj); // returns “$7.89”
 
-let groceries = [
-    {
-        name: "apples",
-        price: "$ " + .89,
-    },
-    {
-        name: "oranges",
-        price: "$" + 1.00
-    },
-
-]
-console.log(groceries[0]);
-
-
-// let price = .89
 function getPrice(obj){
     return obj.price
-
 
 }
 let oranges ={
@@ -29,3 +13,20 @@ let oranges ={
 
 }
 console.log(getPrice(oranges));
+
+// Write a function that when passed an array will return the longest string from the array.
+//    ex. const arr = [“Green”, “Blue”, “Periwinkle”];
+// getLongestString(arr) // Returns “Periwinkle”
+
+function longestString (arr) {
+    let longestStr = '';
+    for(let str of arr){
+        if (str.length > longestStr.length){
+            longestStr = str;
+        }
+    }
+    return longestStr;
+
+    }
+const colors = ["green", "blue", "red", "orange"];
+console.log(longestString(colors));

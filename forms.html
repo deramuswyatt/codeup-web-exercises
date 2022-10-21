@@ -6,28 +6,46 @@
 </head>
 <body>
 <form method="POST" action="https://request-inspector.glitch.me/">
+    <h4>Please enter your email and password</h4>
 
+    <input type="text" name="email" placeholder="Email address"><br>
+    <input type="password" name="password" placeholder="Password">
+
+<h4>Enter Bio in the box below</h4>
     <textarea name="comment" placeholder="Enter bio here!!!"></textarea>
 
 <br>
     <hr>
-    <h4>How did you here about us?</h4>
-     <input type="radio" name="quiz_question_1" value="Billboard">Billboard<br>
-     <input type="radio" name="quiz_question_1" value="b">Radio Advertisement<br>
-     <input type="radio" name="quiz_question_1" value="c">Internet <br>
-     <input type="radio" name="quiz_question_1" value="d">Other<br>
-    <input type="submit">
+<!--    <h4>How did you here about us?</h4>-->
+<!--     <input type="radio" name="Have you heard?" value="Billboard">Billboard<br>-->
+<!--     <input type="radio" name="Have you heard?" value="Radio Advertisement">Radio Advertisement<br>-->
+<!--     <input type="radio" name="Have you heard?" value="Internet ">Internet <br>-->
+<!--     <input type="radio" name="Have you heard?" value="Other">Other<br>-->
+<!--    <input type="submit">-->
 <br>
+    <h2>How did you hear about us?</h2>
+    <label for=Billboard>
+        Billboard <input id=Billboard type="checkbox" name="media" value="media">
+    </label>
+    <label for=RadioAdvertisement>
+        Radio Advertisement <input id=RadioAdvertisement type="checkbox" name="media" value="media">
+    </label>
+    <label for=Internet>
+        Internet <input id=Internet type="checkbox" name="media" value="media">
+    </label>
+    <label for="other">
+        Other <input id="other" type="checkbox" name="media" value="media">
+    </label>
     <hr>
 
     <select name="web browser">
         <option value="web browser">google chrome</option>
         <option value="web browser">safari</option>
         <option value="web browser">Internet Explorer</option>
-        <input type="submit">
     </select>
     <br>
-
+    <input type="submit">
+    <br>
 
 
 </form>
