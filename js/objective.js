@@ -8,58 +8,67 @@
  * here. If you do, the automated tests will not be able to see your functions.
  */
 
-function isANumber(input) {
-    return typeof input === "number"
-    if (typeof num === "number")  {
-        return true;
-    }else (typeof(parseFloat(isNaN == num)))
-    {
-        return false;
-    }
-}
-
-function increment (num) {
-    if (!isNaN(parseFloat(num))) {
-        return parseFloat(num) + 1;
-    } else {
-        return false;
-    }
-}
-
-function decrement() {
-    if (!isNaN(parseFloat(num))) {
-        return parseFloat(num) - 1;
-    } else {
-        return false;
-    }
-}
-
-function getHighestNumber(a,b,c) {
-    if (isNaN(parseFloat(a)) || isNaN(parseFloat(b)) || !isNaN(parseFloat(c))) {
-        return false;
-//     }else if (a > b && a > c){
-//         return parseFloat(a);
-//     }else if (a > b && a > c) {
-//         return parseFloat(b);
-//     }else  (a > b && a > c){
-//         return parseFloat(c);
-// }
-//     }
-    } else {
-        return Math.max(a, b, c);
-    }
-}
-
-function parseNumber(input) {
-    return parseFloat(input)
-}
-//     if (typeof str == "string")  {
+// function isANumber(input) {
+//     return typeof input === "number"
+//     if (typeof num === "number")  {
 //         return true;
-//     }else (typeof(parseFloat(isNaN !== str)))
+//     }else (typeof(parseFloat(isNaN == num)))
 //     {
 //         return false;
 //     }
 // }
+function isANumber(input) {
+    return typeof input === "number"
+    // if (typeof num === "number")  {
+    //     return true;
+    // }else (typeof(parseFloat(isNaN == num)))
+    // {
+    //     return false;
+    // }
+}
+//
+// function increment (num) {
+//     if (!isNaN(parseFloat(num))) {
+//         return parseFloat(num) + 1;
+//     } else {
+//         return false;
+//     }
+// }
+//
+// function decrement() {
+//     if (!isNaN(parseFloat(num))) {
+//         return parseFloat(num) - 1;
+//     } else {
+//         return false;
+//     }
+// }
+//
+// function getHighestNumber(a,b,c) {
+//     if (isNaN(parseFloat(a)) || isNaN(parseFloat(b)) || !isNaN(parseFloat(c))) {
+//         return false;
+// //     }else if (a > b && a > c){
+// //         return parseFloat(a);
+// //     }else if (a > b && a > c) {
+// //         return parseFloat(b);
+// //     }else  (a > b && a > c){
+// //         return parseFloat(c);
+// // }
+// //     }
+    } else {
+        return Math.max(a, b, c);
+    }
+}
+//
+// function parseNumber(input) {
+//     return parseFloat(input)
+// }
+// //     if (typeof str == "string")  {
+// //         return true;
+// //     }else (typeof(parseFloat(isNaN !== str)))
+// //     {
+// //         return false;
+// //     }
+// // }
 function add(x, y){
     if (isNaN(parseFloat(x)) || isNaN(parseFloat(y))) {
         return false;
@@ -67,7 +76,7 @@ function add(x, y){
         return parseFloat(x) + parseFloat(y);
     }
 }
-
+//
 function multiply(x, y){
     if(isNaN(parseFloat(x)) || isNaN(parseFloat(y))){
         return false;
@@ -75,34 +84,49 @@ function multiply(x, y){
         return parseFloat(x) * parseFloat(y);
     }
 }
-
-function square(x){
-// return multiply(x,x);
-    if(isNaN(parseFloat(x))){
-        return false;
-    }else{
-        return Math.pow(x ^ 2);
-    }
-}
+//
+// function square(x){
+// // return multiply(x,x);
+//     if(isNaN(parseFloat(x))){
+//         return false;
+//     }else{
+//         return Math.pow(x ^ 2);
+//     }
+// }
 
 function sumOfSquares(x, y){
     // return add(square(x), square(y));
     if(isNaN(parseFloat(x)) || isNaN(parseFloat(y))) {
         return false;
     }else{
-        return
+        return (x*x) + (y*y);
+
+        function sumOfSquares(a,b){
+            if(!isNaN(parseNumber(a)) && !isNaN(parseNumber(b))) {
+                return square(a) + square(b);
+            } else {
+                return false;
+            }
+        }
+
+function sumOfSquares(x, y){
+    // return add(square(x), square(y));
+    if(isNaN(parseFloat(x)) || isNaN(parseFloat(y))) {
+        return false;
+    }else{
+        return Math.pow((x ^ 2) + Math.pow(y ^ 2));
     }
 }
 
-function isPalindrome(str) {
-    if(typeof str === "string") {
-        let lowRegStr = str.toLaowercase()
-        let reverseStr = lowRegStr.split("").reverse().join('');
-        return lowRegStr === reverseStr;
-    }else {
-        return false;
-    }
-}
+// function isPalindrome(str) {
+//     if(typeof str === "string") {
+//         let lowRegStr = str.toLowercase()
+//         let reverseStr = lowRegStr.split("").reverse().join('');
+//         return lowRegStr === reverseStr;
+//     }else {
+//         return false;
+//     }
+// }
 
 
 
@@ -153,3 +177,10 @@ function isPalindrome(str) {
 // function isPalindrome(input) {
 //     return typeof input === "";
 // }
+
+function isANumber (input){
+    if(typeof input === "number") {
+        return true;
+    }else typeof(!isNaN(parseFloat()))
+
+}

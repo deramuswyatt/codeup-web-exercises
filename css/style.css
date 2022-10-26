@@ -1,0 +1,24 @@
+
+.fancy-header {
+    color: purple;
+    text-decoration: underline;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: purple;
+}
+
+ul {
+    text-align: center;
+    color: blue;
+}
+main{
+    background-image:url("../img/water.jpeg")
+
+}
+
+#table{
+    border: black;
+    border-bottom-color: purple;
+}

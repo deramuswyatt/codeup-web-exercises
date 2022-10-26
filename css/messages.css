@@ -1,0 +1,56 @@
+/*.box{*/
+/*    display: inline-block;*/
+/*    background: darkgreen;*/
+/*    box-sizing: content-box;*/
+/*    color: azure;*/
+/*    width: 500px;*/
+/*    font-size: 28px;*/
+/*    height: 500px;*/
+/*    padding: 50px;*/
+/*    border: springgreen 10px solid;*/
+/*    border-radius: 50%;*/
+/*}*/
+/*!*to get circle height width & percent & padding*!*/
+
+/*.container{*/
+/*    margin: 5px;*/
+/*    padding: 5px;*/
+/*}*/
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message-info{
+    color: #504da6;
+    background-color: #ccdeff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+.message-success{
+    color: #64a379;
+    background-color: #cff3da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+.message-warning{
+    color: #d2cb87;
+    background-color: #fcfbc9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+.message-error{
+    color: #8e2a41;
+    background-color: #fad2d6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+}

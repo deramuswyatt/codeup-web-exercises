@@ -1,0 +1,48 @@
+.form-group {
+    /*text-align-all: center;*/
+    width: 860px;
+    height: 40px;
+    margin: 1px;
+    border: black;
+background-color: white;
+
+}
+
+.btn-block{
+    text-align: center;
+    background-color: #0eb884;
+    margin-top: 10px;
+    width: 870px;
+    height: 30px;
+    /*border: 860px;*/
+    /*border-left: black;*/
+    border-width: 50px;
+    /*border-color: black;*/
+    font-size: 20px;
+}
+
+
+fieldset{
+    /*background-color: white;*/
+    border-color: #cbffcd;
+    border-width: 80px;
+    /*padding: 0;*/
+    width: 500px;
+    height: 160px;
+    box-shadow: 10px 10px #394639;
+}
+#username{
+    width: 860px;
+}
+#password{
+    ;
+    width: 860px;
+}
+.btn{
+    border: black;
+}
+
+/*.width-80{*/
+/*    background-color: white;*/
+
+/*}*/
