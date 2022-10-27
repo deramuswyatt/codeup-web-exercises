@@ -27,6 +27,7 @@ body, html {
 }
 
 .message-info{
+    border: 1px;
     color: #504da6;
     background-color: #ccdeff;
     border-radius: 5px;
