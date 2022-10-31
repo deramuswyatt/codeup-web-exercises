@@ -15,21 +15,36 @@ let oranges ={
 console.log(getPrice(oranges));
 
 // Write a function that when passed an array will return the longest string from the array.
-//    ex. const arr = [“Green”, “Blue”, “Periwinkle”];
+//     let colors = [“Green”, “Blue”, “Periwinkle”];
 // getLongestString(arr) // Returns “Periwinkle”
 function getLongestString(arr){
-    let longestStr = "";
-
-    for(let str of arr ){
-        if(str.length > longestStr.length){
-            longestStr = str;
-        }
-    }
-    return longestStr;
+ let longestStr = " ";
+ colors.forEach(function(color){
+ if(color.length > longestStr.length) {
+     longestStr = color;
+ }
+ });
+   return longestStr;
 }
+console.log(getLongestString(colors));
+
+// function getLongestStr(arr){
+//     for
+// }
+
+// function getLongestString(arr){
+//     let longestStr = "";
+//
+//     for(let str of arr ){
+//         if(str.length > longestStr.length){
+//             longestStr = str;
+//         }
+//     }
+//     return longestStr;
+// }
 
 let colors = ['green', 'purplemeangreen', 'indigoflex'];
-console.log(getLongestString(colors));
+// console.log(getLongestString(colors));
 
 
 function getTallestHamster (arr) {
