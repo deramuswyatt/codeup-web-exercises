@@ -17,16 +17,16 @@ console.log(getPrice(oranges));
 // Write a function that when passed an array will return the longest string from the array.
 //     let colors = [“Green”, “Blue”, “Periwinkle”];
 // getLongestString(arr) // Returns “Periwinkle”
-function getLongestString(arr){
- let longestStr = " ";
- colors.forEach(function(color){
- if(color.length > longestStr.length) {
-     longestStr = color;
- }
- });
-   return longestStr;
-}
-console.log(getLongestString(colors));
+// function getLongestString(arr){
+//  let longestStr = " ";
+//  colors.forEach(function(color){
+//  if(color.length > longestStr.length) {
+//      longestStr = color;
+//  }
+//  });
+//    return longestStr;
+// }
+// console.log(getLongestString(colors));
 
 // function getLongestStr(arr){
 //     for
@@ -43,7 +43,7 @@ console.log(getLongestString(colors));
 //     return longestStr;
 // }
 
-let colors = ['green', 'purplemeangreen', 'indigoflex'];
+// let colors = ['green', 'purplemeangreen', 'indigoflex'];
 // console.log(getLongestString(colors));
 
 
@@ -108,9 +108,27 @@ function getTallestHamster (arr) {
     console.log(getTallestHamster(hamsters));// should return {name: "Boss", heightInMM: 120, fur: ['brown', 'white'], gender: "male", dateOfBirth: "September 21"};
 
 
+// Warmup: Write FizzBuzz from 1-100;
+// Numbers evenly divisible by 3 should be replaced by Fizz
+// Numbers evenly divisible by 5 should be replaced by Buzz
+// Numbers evenly divisible by both 3 and 5 should be replaced by FizzBuzz
+// All other numbers should be printed in the console.
+//CHECK FOR MOST SPECIFIC FIRST
 
-
-
+function fizzBuzz () {
+    for(let i = 1; i < 101; i++) {
+        if (i % 15 === 0){
+            console.log("FizzBuzz");;
+        }else if(i % 5 === 0){
+            console.log("Buzz");;
+        }else if(i % 3 === 0){
+            console.log("Fizz");;
+        }else{
+            console.log(i);
+        }
+    }
+}
+fizzBuzz();
 
 
 
