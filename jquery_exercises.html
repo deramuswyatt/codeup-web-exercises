@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <script src="js/jquery-exercises.js"></script>
+</head>
+<body>
+<h3 class="codeup">Hello Welcome to Wyatt's World</h3>
+<div id="welcome">
+   “Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”
+        ― Albert Einstein
+    “Be the change that you wish to see in the world.”
+        ― Mahatma Gandhi
+</div>
+<div class="codeup">
+    <ul>
+        <li>Drinks on me</li>
+        <li>Drinks on you</li>
+        <li>Drinks on the house</li>
+        <li>no drinks at all</li>
+    </ul>
+</div>
+<div id="end-game">
+    <h1 id="back-to-quotes">We have been through a lot, but now we're here</h1>
+    <p id="codeup">“I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
+        ― Maya Angelou</p>
+    <p>“Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.”
+        ― Martin Luther King Jr., A Testament of Hope: The Essential Writings and Speeches</p>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+<script>
+
+    // $(function() {
+ID Selectors
+    //     alert($("#heading").html());
+    // });
+    // $(function() {
+    //     alert($("#welcome").html());
+    // });
+////////////Class Selectors/////////////
+    // $(function() {
+    //     $('.codeup').css('border', "1px solid red")
+    // });
+///////////Element and Multiple Selectors//////////////
+    $(function() {
+        let listItems = $("li");
+        let paragraphs = $("p");
+        let heading = $("h1")
+        listItems.css("font-size", "20px")
+        // heading.css("background-color", "yellow");
+        // paragraphs.css("background-color", "yellow");
+        // listItems.css("background-color", "yellow");
+        alert(heading.html());
+        $("h1, p, li").css("background-color", "yellow")
+    });
+
+</script>
+
+
+
+
+
+

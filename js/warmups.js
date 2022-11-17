@@ -274,8 +274,7 @@ const cart = [
 		weightInGrams: 2186
 	}
 ];
-// getHeaviestItem(cart) // returns {name: "Kingsford Charcoal", weightInGrams: 4535}
-// ```
+
 function getHeaviestItem(x){
     let heaviest = {weightInGrams: 0}
     for (i = 0; i < x.length; i++){
@@ -287,6 +286,8 @@ function getHeaviestItem(x){
 }
 
 console.log(getHeaviestItem(cart))
+// getHeaviestItem(cart) // returns {name: "Kingsford Charcoal", weightInGrams: 4535}
+// ```
 //
 // 4. Write a function that takes in an array of numbers and returns an array of numbers from the original array that are evenly divisible by 13. If a number is not evenly divisible by 13, it should not be returned. If no elements within the array are evenly divisible by 13, the function should return an empty array.
 //
