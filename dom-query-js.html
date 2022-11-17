@@ -32,15 +32,17 @@
         let mainHeader = document.getElementById('main-header') ;
         console.log(mainHeader.innerHTML);
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-
-            mainHeader.innerHTML = "Javascript is so Cool";
+let mainH = function() {
+    mainHeader.innerHTML = "Javascript is so Cool";
+}
 
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById("sub-header");
+        // var subHeader = document.getElementById("sub-header");
 
         // TODO: Set the text color of subHeader to blue
-        let bodyElement = document.getElementById("sub-header");
-        bodyElement.style.color = "blue";
+        let subHeader = function(){
+            document.getElementById("sub-header").style.color = "blue";
+        }
 
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
@@ -62,6 +64,13 @@ for(let i = 0; i < listItems.length; i++) {
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs[0].innerHTML = "Mission Accomplished";
+
+
+
+document.getElementById("main-header").addEventListener("click", mainH);
+document.getElementById("sub-header").addEventListener("click", subHeader);
+document.getElementById("li").addEventListener("click", listItems)
+subParagraphs.addEventListner()
     })();
 </script>
 </body>
