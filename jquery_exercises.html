@@ -42,7 +42,7 @@
 <script>
 
     // $(function() {
-ID Selectors
+// ID Selectors
     //     alert($("#heading").html());
     // });
     // $(function() {
@@ -53,18 +53,31 @@ ID Selectors
     //     $('.codeup').css('border', "1px solid red")
     // });
 ///////////Element and Multiple Selectors//////////////
-    $(function() {
-        let listItems = $("li");
-        let paragraphs = $("p");
-        let heading = $("h1")
-        listItems.css("font-size", "20px")
+//     $(function() {
+//         let listItems = $("li");
+//         let paragraphs = $("p");
+//         let heading = $("h1")
+//         listItems.css("font-size", "20px")
         // heading.css("background-color", "yellow");
         // paragraphs.css("background-color", "yellow");
         // listItems.css("background-color", "yellow");
-        alert(heading.html());
-        $("h1, p, li").css("background-color", "yellow")
+    //     alert(heading.html());
+    //     $("h1, p, li").css("background-color", "yellow")
+    // });
+
+$("h1").click(function(){
+    $(this).css("background-color", "blue");
     });
 
+$("p").dblclick(function(){
+   $(this).css("font-size", "18px")
+});
+
+    $('li').hover(function() {
+        $(this).css('color','red');
+    }, function() {
+        $(this).css('color','black');
+    });
 </script>
 
 
