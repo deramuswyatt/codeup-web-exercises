@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+
+<!--<button id="refresh">click</button>-->
+<button type="button" onclick="reloadPage();">Reload page</button>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+    function reloadPage(){
+        location.reload(true);
+    }
+(function() {
+    "use strict";
+    // TODO: Create an AJAX GET request for the file under data/inventory.json
+    $.ajax("data/inventory.json").done(function(data) {
+        console.log(data);
+    });
+    // // TODO: Take the data from inventory.json and append it to the products table
+    let query = "";
+    // //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    // //             its contents and fields
+    // //       HINT: You will want to target #insertProducts for your new HTML elements
+    // $.get("data/inventory.json").done(function(data) {
+    //     $("#insertProducts").append(query);
+    // });
+
+
+    $.each(function (value) {
+    query += '<tr>';
+    query += '<td>' +
+        value.Title + '</td>';
+
+    query += '<td>' +
+        value.Quantity + '</td>';
+
+    query += '<td>' +
+        value.Price + '</td>';
+
+    query += '<td>' +
+        value.Categories + '</td>';
+
+    query += '</tr>';
+});
+
+    $('#products').append(query);
+    // let inventory = function () {
+    //     // TODO: Create an AJAX GET request for the file under data/inventory.json
+    //     $.get("data/inventory.json").done(function (data){
+    //         // TODO: Take the data from inventory.json and append it to the products table
+    //         //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //         //             its contents and fields
+    //         //       HINT: You will want to target #insertProducts for your new HTML elements
+    //         var htmlString = '';
+    //         for(var i =0; i < data.length; i++) {
+    //             htmlString += '<tr>';
+    //             htmlString +=  '<td>' + data[i].title + '</td>';
+    //             htmlString += '<td>' + data[i].quantity + '</td>';
+    //             htmlString += '<td>' + data[i].price + '</td>'
+    //             htmlString += '<td>' + data[i].categories + '</td>'
+    //             htmlString += '</tr>';
+    //         }
+    //         $('#insertProducts').html(htmlString);
+    //     });
+    // }
+    // inventory();
+    $('#refresh').click(query);
+})();
+</script>
+
+</body>
+</html>
