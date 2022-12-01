@@ -1,0 +1,70 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Konami Code</title>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Konami Code</h1>-->
+
+
+
+
+<!--<script src="js/jquery.js"></script>-->
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<script>-->
+<!--&lt;!&ndash;The cheat pattern I got from keycode.info&ndash;&gt;-->
+<!--    let cheatPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter'];-->
+<!--///////////Where it all starts///////////////////-->
+<!--    let current = 0;-->
+
+<!--///////////////////JQUERY function//////////////////////////////////////////////////////////////////////////////////-->
+<!--$(document).keyup(function(event){-->
+<!--///////////////////setting keystroke as event.key which returns the value of the key pressed by the user/////////////-->
+<!--    let keystroke = event.key;-->
+<!--    console.log(keystroke);-->
+<!--/////////////////if my keystroke is === to the cheat pattern starting at [current]//////////////-->
+<!--    if (keystroke === cheatPattern[current]) {-->
+<!--        console.log(cheatPattern[2]);-->
+<!--/////////////Keep Going(increment)////////////////////////////////////////////////////////////////////////////////////-->
+<!--        current++;-->
+<!--/////////////if my cheat pattern's length[10] is equal to my current starting from 0 "alert you found it//////////-->
+<!--        if (cheatPattern.length === current) {-->
+<!--            current = 0;-->
+<!--            alert('You found it!');-->
+<!--        }-->
+<!--////////////////else if my keystroke is Not equal to my current Start over go back to 000!///////////-->
+<!--    }else if(keystroke !== current){-->
+<!--        current = 0;-->
+<!--        alert('Start over')-->
+<!--    }-->
+
+
+<!--    console.log(current);-->
+
+<!--});-->
+
+
+
+
+<!--</script>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+
+</head>
+<body>
+<h1>Konami Code</h1>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>
+</html>
