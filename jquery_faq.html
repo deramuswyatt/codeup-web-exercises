@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <style>
+        .invisible{
+            visibility: hidden;
+        }
+        .highlight{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FAQ</h1>
+
+<p>FAQ for Noccalula Falls Park</p>
+<dl>
+    <dt>Where is Noccalula Falls located? </dt>
+    <dd class="invisible">1500 Noccalula Road, Gadsden, Al 35904</dd>
+
+    <dt>What are the hours of operation?</dt>
+    <dd class="invisible"> Monday-Saturday 9:00am-5:00pm
+         Sunday 11:00am=7:00pm</dd>
+
+    <dt>What is the telephone number?</dt>
+    <dd class="invisible">Telephone: (256)549-4663 Option 2</dd>
+
+    <dt>What what the legend called before it was Noccalula Falls?</dt>
+    <dd class="invisible">Black Creek Falls</dd>
+
+    <dt>Does your park rent wheelchairs or strollers?</dt>
+    <dd class="invisible">No, we do not. </dd>
+
+    <dt>I want to hike down underneath the waterfall. Is that allowed?</dt>
+    <dd class="invisible">Yes, we have trails on each side of the park that lead down to and behind the falls.</dd>
+
+    <dt>Can pets ride the train?</dt>
+    <dd class="invisible">Not unless they are ADA recognized Service Animals. No other animals are allowed (not counting Train Drivers of course)</dd>
+
+    <dt> Are campers allowed to have campfires?</dt>
+    <dd class="invisible">Yes, campfires are welcome but only with a heavy dose of common sense.</dd>
+
+    <dt>Can we bring our own firepit?</dt>
+    <dd class="invisible">Yes you can. Just make sure you do so safely.
+    </dd>
+
+    <dt>Are there any primitive campsites in the campground.
+    </dt>
+    <dd class="invisible">No, no primitive sites are available.
+    </dd>
+</dl>
+<button id="submit">Submit</button>
+
+<!--traversing exercise////////////////-->
+
+
+<h3 class="h3">Noccalula Falls Park</h3>
+<ul id="alabama-national-park">
+    <li>1500 Noccalula Road, Gadsden, Al 35904</li>
+    <li>Monday-Saturday 9:00am-5:00pm
+        Sunday 11:00am - 7:00pm</li>
+    <li>Telephone: (256)549-4663 Option 2</li>
+    <li>We have trails on each side of the park that lead down to and behind the falls.</li>
+</ul>
+<h3 class="h3">Big Bend National Park</h3>
+<ul id="texas-national-park">
+    <li>Big Bend National Park is in southwest Texas</li>
+    <li>The Ross Maxwell Scenic Drive leads to the ruins of Sam Nail Ranch</li>
+    <li>The National Park Service manages 14 units in Texas including two national parks - Guadalupe Mountains and Big Bend.</li>
+    <li>Taking a float trip on the Rio Grande is a great way to explore Big Bend. </li>
+    <li>Once your trip is organized, come to a visitor center to obtain your river permit. </li>
+</ul>
+<h3 class="h3">Brown vs. Board of Education Park</h3>
+<ul id="kansas-national-park" >
+    <li>This landmark Supreme Court decision was announced on 17 May 1954.</li>
+    <li>This case began in Topeka, Kansas when Oliver Brown’s daughter was refused entry to the local school because she was Black.</li>
+    <li>Inside, there are a ton of exhibits, activities, and films that document this era of American history.</li>
+    <li>Brown v. Board of Education is at 1515 SE Monroe Street, Topeka.</li>
+</ul>
+
+<button id="submit2">Submit</button>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+<script>
+
+    $("#submit").click(function(e) {
+        e.preventDefault();
+        $("dd").toggleClass("invisible");
+    });
+    $("#submit").click(function() {
+        $("dd").toggleClass("highlight");
+    });
+
+    $("#submit2").click(function() {
+        $("ul").each(function () {
+            $(this).children().last().toggleClass("highlight")
+        });
+    });
+
+    $(".h3").click(function (){
+        $(this).next().css("font-weight", "bold");
+    });
+
+    $("li").click(function (){
+        $(this).parent().children().first().css("color", "blue");
+    });
+
+    // Open the file named jquery_faq.html for editing. Commit all changes to GitHub.
+    //
+    //Under the FAQ, add 3 unordered lists like above. Each list should contain a national park name in an h3 element, and a ul of 4 facts about the park.
+    //
+    //Create a button that, when clicked, makes the last li in each ul have a yellow background.
+    //
+    // When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this.
+    //
+    //When any list item is clicked, first li of the parent ul should have a font color of blue.
+    //
+    // $("btnbBtnPrimary").click(function(){
+    //     $("li").last.css("background-color", "yellow")
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
