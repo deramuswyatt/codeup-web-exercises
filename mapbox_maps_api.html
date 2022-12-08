@@ -38,12 +38,12 @@
         zoom: 10,
         center: [-98.4916, 29.4252]
     });
-    //geocode with favorite restaurant///
-    // geocode("313 E Houston St, San Antonio, TX 78205", mapboxKey).then(function(result) {
-    //     console.log(result);
-    //     map.setCenter(result);
-    //     map.setZoom(10);
-    // });
+    // geocode with favorite restaurant///
+    geocode("313 E Houston St, San Antonio, TX 78205", mapboxKey).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(10);
+    });
     // //Setting Marker////
     // var marker = new mapboxgl.Marker()
     //     .setLngLat([-98.48903, 29.42676])
