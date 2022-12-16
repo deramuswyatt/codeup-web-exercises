@@ -61,26 +61,26 @@
 });
 
     $('#products').append(query);
-    // let inventory = function () {
-    //     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    //     $.get("data/inventory.json").done(function (data){
-    //         // TODO: Take the data from inventory.json and append it to the products table
-    //         //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-    //         //             its contents and fields
-    //         //       HINT: You will want to target #insertProducts for your new HTML elements
-    //         var htmlString = '';
-    //         for(var i =0; i < data.length; i++) {
-    //             htmlString += '<tr>';
-    //             htmlString +=  '<td>' + data[i].title + '</td>';
-    //             htmlString += '<td>' + data[i].quantity + '</td>';
-    //             htmlString += '<td>' + data[i].price + '</td>'
-    //             htmlString += '<td>' + data[i].categories + '</td>'
-    //             htmlString += '</tr>';
-    //         }
-    //         $('#insertProducts').html(htmlString);
-    //     });
-    // }
-    // inventory();
+    let inventory = function () {
+        // TODO: Create an AJAX GET request for the file under data/inventory.json
+        $.get("data/inventory.json").done(function (data){
+            // TODO: Take the data from inventory.json and append it to the products table
+            //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+            //             its contents and fields
+            //       HINT: You will want to target #insertProducts for your new HTML elements
+            var htmlString = '';
+            for(var i =0; i < data.length; i++) {
+                htmlString += '<tr>';
+                htmlString +=  '<td>' + data[i].title + '</td>';
+                htmlString += '<td>' + data[i].quantity + '</td>';
+                htmlString += '<td>' + data[i].price.toFixed(2) + '</td>'
+                htmlString += '<td>' + data[i].categories.join(", ") + '</td>'
+                htmlString += '</tr>';
+            }
+            $('#insertProducts').html(htmlString);
+        });
+    }
+    inventory();
     $('#refresh').click(query);
 })();
 </script>

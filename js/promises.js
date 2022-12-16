@@ -1,32 +1,22 @@
 "use strict"
 
 
-// fetch("https://pokeapi.co/api/v2/pokemon/ditto")
-// .then(resp => resp.json())
-// .then(data => console.log(data))
-// // .catch(error => {
-// //     console.log(("do something Dido"));
-// //     console.log(error);
-// });
+    const lastCommit = (username) => {
+    // let pushEvents = {}
+        fetch(`https://api.github.com/users/${username}/events/public`, {headers: {'Authorization': 'gitKey'}})
+            .then(response => response.json())
+            .then(users => {
+                let date = users[0].created_at
+                let formattedDate = date.substring(0,10)
+                console.log(formattedDate)
+                return
+            }).catch(error => console.log(error))
 
-// fetch(url, {headers: {'Authorization': 'gitKey'}})
 
-fetch('https://api.github.com/users', {headers: {'Authorization': "gitKey"}}).then( response => {
-    response.json().then( users => {
-        users.forEach( userObj  => {
-            // do something with the username login
-            // Octokit.js
-// https://github.com/octokit/core.js#readme
-            const octokit = new Octokit({
-                auth: 'gitKey'
-            })
+    }
+console.log(lastCommit("deramuswyatt"))
+//
 
-            // await octokit.request('GET /repos/{owner}/{repo}/events{?per_page,page}', {
-            //     owner: 'OWNER',
-            //     repo: 'REPO'
-            // })
-            console.log(userObj.login);
-        });
-    });
-});
+
+
 
